@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+.container {
+    width: 95%;
+    border: 5px solid #283618;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 0 10px #bc6c25;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    /* align-content: center; */
+}
+
+.element {
+    background-color: #dda15e;
+    height: 50px;
+    width: 20%;
+    color: #283618;
+    font-size: 30px;
+    font-weight: 800;
+    border: 3px solid #000000;
+    margin: 5px;
+    text-align: center;
+    color: #fefae0;
+    
+}
+
+#one {
+    background-color: #606c38;
+    order: 3;
+}
+
+#two {
+    order: 1;
+}
+
+#three {
+    background-color: #bc6c25;
+    order: 2;
+}
