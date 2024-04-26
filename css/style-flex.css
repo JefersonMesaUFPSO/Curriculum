@@ -5,6 +5,8 @@
 
 body {
     padding: 10px;
+
+    background-color: #eba35f;
 }
 
 .container {
@@ -47,4 +49,20 @@ body {
 #three {
     background-color: #bc6c25;
     order: 2;
+}
+
+
+/* ------------- MEDIA QUERYS -------------- */
+
+
+@media screen and (max-width: 1200px) {
+    .element {
+        border: 5px solid #fff;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .element {
+        border: 5px solid #ff9e9e;
+    }
 }
