@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo JS</title>
+</head>
+<body onload="load_page()">
+
+    <div class="container">
+            <div class="route">
+                <label for="name">Name: </label>
+                <input type="text" id="name" autocomplete="off">
+            </div>
+
+            <div class="route">
+                <label for="last_name">lastname: </label>
+                <input type="text" id="last_name" autocomplete="off">
+            </div>
+
+            <div class="send" id="send" onclick="send_form()">
+                <button>Enviar</button>
+            </div>
+            <div id="print">
+                
+            </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../js/functions.js"></script>
+</body>
+</html>

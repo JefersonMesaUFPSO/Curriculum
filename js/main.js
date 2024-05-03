@@ -6,7 +6,7 @@ document.querySelectorAll(".hamburguer")[0].addEventListener("click", function()
         document.querySelectorAll(".hamburguer")[0].style.color ="#fff";
         ico_hamburguer= false;
     }else{
-        document.querySelectorAll(".hamburguer")[0].style.color ="#000";
+        document.querySelectorAll(".hamburguer")[0].style.color ="#2b9ed8";
         ico_hamburguer= true;
     }
 
