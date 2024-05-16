@@ -73,3 +73,40 @@ function send_form() {
     }
 
 }
+
+var array_numerico = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function agregar() {
+    let num = document.getElementById("num").value;
+    let array_add = array_numerico.push(num);
+    console.log(array_add);
+    console.log(array_numerico);
+    document.getElementById("impresion").value = array_numerico
+}
+function eliminar() {
+    let = array_delete = array_numerico.pop();
+    console.log(array_delete);
+    console.log(array_numerico);
+    document.getElementById("impresion").value = array_numerico
+}
+function reves() {
+    document.getElementById("impresion").value= array_numerico.reverse();
+
+}
+function prim(){
+    let num = document.getElementById("num2").value;
+    let array_add = array_numerico.unshift(num);
+    document.getElementById("impresion").value = array_numerico;
+    
+}
+function limpiar() {
+    document.getElementById("num").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("last_name").value = "";
+    document.getElementById("result").innerText = "";
+}
+
+function eliminarprim(){
+    let array_delete = array_numerico.shift();
+    document.getElementById("impresion").value=array_numerico;
+}
