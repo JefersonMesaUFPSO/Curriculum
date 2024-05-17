@@ -44,6 +44,9 @@ function load_page() {
         showConfirmButton: false,
         timer: 2000,
       });
+      
+    document.getElementById('name_search').value = nombre_form;
+    console.log("Hola");
 }
 
 
@@ -51,23 +54,33 @@ function load_page() {
 function send_form() {
     let name = document.getElementById('name').value;
     let last_name = document.getElementById('last_name').value;
-
-    if ( name.length == "" || last_name.length == "") {
+    let pass_one = document.getElementById('pass_one').value;
+    let pass_two = document.getElementById('pass_two').value;
+    
+    if ( name.length == 0 || last_name.length == 0 || pass_one.length == 0 || pass_two.length == 0) {
         Swal.fire({
         title: "ERROR",
         text: "El formulario está vacio",
         icon: "error"
         });
-        if(name.length == 0){
-            document.getElementById('name').style.border = "2px solid red";
-        } else {
-            document.getElementById('name').style.border = "2px solid green";
-        }
-        if(last_name.length == 0){
-            document.getElementById('last_name').style.border = "2px solid red";
-        } else {
-            document.getElementById('last_name').style.border = "2px solid green";
-        }
+    //     if(name.length == 0){
+    //         document.getElementById('name').style.border = "2px solid red";
+    //     } else {
+    //         document.getElementById('name').style.border = "2px solid green";
+    //     }
+    //     if(last_name.length == 0){
+    //         document.getElementById('last_name').style.border = "2px solid red";
+    //     } else {
+    //         document.getElementById('last_name').style.border = "2px solid green";
+    //     }
+    // } else {
+    //     
+    } else if (pass_one != pass_two) {
+        Swal.fire({
+            title: "Sus contraseñas no son iguales",
+            text: "Por favor valide sus credenciales",
+            icon: "error"
+            });
     } else {
         document.getElementById('print').innerText = "Su nombre es: " + name+ " y su apellido es: " +last_name;
     }
@@ -109,4 +122,22 @@ function limpiar() {
 function eliminarprim(){
     let array_delete = array_numerico.shift();
     document.getElementById("impresion").value=array_numerico;
+}
+
+
+var nombre_form = "Jeferson Sebastian Mesa Moreno";
+
+function search() {
+    let nombre_buscar = document.getElementById("name_search").value;
+    // Swal.fire(nombre_buscar.toLowerCase());
+    // Swal.fire({
+    //     title: "Sus contraseñas no son iguales",
+    //     text: nombre_buscar.toLowerCase(),
+    //     icon: "error"
+//  })
+    let word = nombre_buscar.split("");
+    Swal.fire(word+"");
+
+    let word_com = word.join("");
+    console.log(word_com);
 }

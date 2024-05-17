@@ -7,6 +7,14 @@
     <title>Aprendiendo JS</title>
 </head>
 <body onload="load_page()">
+
+
+    <div>
+        <input type="text" id="name_search" size="30" disabled>
+        <button onclick="search()">Buscar</button>
+    </div>
+
+
     <div>
         <div>
             <label for="name">Name:</label>
@@ -16,9 +24,18 @@
             <label for="last_name">Lastname:</label>
             <input type="text" id="last_name" placeholder="Ingrese su apellido">
         </div>
+
+        <div>
+            <label for="pass_one">Ingrese Contraseña</label>
+            <input type="password" id="pass_one" placeholder="Ingrese su contraseña">
+        </div>
+        <div>
+            <label for="pass_two">Repita Contraseña</label>
+            <input type="password" id="pass_two" placeholder="Repita su contraseña">
+        </div>
     </div>
     <div>
-        <button id="send" onmouseover="send_form()">ENVIAR</button>
+        <button id="send" onclick="send_form()">ENVIAR</button>
     </div>
     <div id="print"></div>
     <br><br>
