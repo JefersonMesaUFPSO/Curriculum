@@ -17,3 +17,18 @@ document.querySelectorAll(".enlaces-header")[0].addEventListener("click", functi
     enlaces_header.classList.toggle("hamburgueropen");
     document.querySelectorAll(".hamburguer")[0].style.color ="#000";
 })
+
+
+
+// Funcion para colocar una transición mas lenta a los hipervinculos del nav
+
+const links  = document.querySelectorAll('.link');
+
+links.forEach( (link) => {
+    link.addEventListener('click', (e) =>{
+        e.preventDefault();
+        const element = document.querySelector(link.getAttribute('href'));
+
+        element.scrollIntoView({block: "start", behavior: "smooth"});
+    });
+});
