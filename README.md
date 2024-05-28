@@ -25,12 +25,15 @@ En este proyecto logré fortalecer mis habilidades en css y Javascript, permitie
 
 ## Autor ✒️
 **Jeferson Mesa**
-## Plantilla 🖌️
-**Wilder Duarte**
-* [](https://github.com/WilderDuarte)
 
 * [jefersonmesa13@gmail.com](jefersonmesa13@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/jeferson-mesa-62a209201/)
+
+## Plantilla 🖌️
+**Wilder Duarte**
+* [Github](https://github.com/WilderDuarte)
+
+
 
 ## Instalación 
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
