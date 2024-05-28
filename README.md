@@ -25,6 +25,9 @@ En este proyecto logré fortalecer mis habilidades en css y Javascript, permitie
 
 ## Autor ✒️
 **Jeferson Mesa**
+## Plantilla 🖌️
+**Wilder Duarte**
+* [](https://github.com/WilderDuarte)
 
 * [jefersonmesa13@gmail.com](jefersonmesa13@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/jeferson-mesa-62a209201/)
